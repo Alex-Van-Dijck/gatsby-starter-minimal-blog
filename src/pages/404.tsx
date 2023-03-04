@@ -4,8 +4,8 @@ import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout"
 
 const NotFound = (_props: PageProps) => (
   <Layout>
-    <h1>404 - Page Not Found</h1>
-    <p>Unfortunately we couldn't find what you were looking for :(</p>
+    <h1>404 - Pagina niet gevonden</h1>
+    <p>Jammer genoeg konden we de pagina niet vinden die je zocht :(</p>
   </Layout>
 )
 
