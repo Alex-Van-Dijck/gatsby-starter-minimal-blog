@@ -1,0 +1,37 @@
+---
+title: "Zondag 02/04"
+date: 2023-04-02
+slug: "/0204"
+tags:
+  - weekupdate
+---
+
+# Week 8
+
+## Maandag 27 Maart
+
+Maandag heb ik in de voormiddag nog even doorgewerkt aan de bug die ervoor zorgde dat de labels niet mee vertaald werden als je van taal switchte. Initiëel was ik deze dag van thuis uit aan het werken, maar toen ik hoorde dat de rest van het bedrijf vannamiddag op locatie zou komen voor een meeting ben ik tegen de middag ook naar daar vertrokken aangezien ik op locatie werken sowiso wel aangenamer vind.
+Eens aangekomen vernam ik dat door miscommunicatie een aantal mensen de meeting niet konden bijwonen en er dus plaatsen vrij waren.
+Toen Clovis (co-founder) me vroeg of ik het zag zitten om één van deze plaatsen in te nemen was ik dan ook heel enthousiast. De meeting ging over hoe de nieuwe 'purpose' van het bedrijf verwoord zou worden.
+Ik vond het persoonlijk achteraf gezien heel leuk om betrokken te worden bij deze meeting aangezien het me veel deed denken aan mijn opleiding in het secundair waar ik ook vaak moest werken rond ondernemen en dergelijke dingen mee moest uitdenken.
+
+## Dinsdag 28 Maart
+
+Dinsdag heb ik weer verder gewerkt aan de translationbug en na nog enkele kleine reviews van de developers uit het vaste team was deze feature dan ook klaar om gemerged te worden.
+Ik denk dat dit voor de eindgebruikers maar een kleine verandering is, maar intern voor de codebase is dit een hele vooruitgang geweest :).
+
+## Woensdag 29 Maart
+
+Woensdag ben ik begonnen aan 'Remove IncludeAllProfessionals and ProfessionalsOrganizations link from DB'. Dit ticketje hield in dat het IncludeAllProfessionals veld weggehaald moest worden uit de database, dit werd vroeger gebruikt voor organisaties die bepaalde psy's aan zich gelinkt hadden.
+Wat nu totaal niet meer gebeurt, maar de code die gaat checken of het veld true is en alles afhandelt bestond dus nog (weliswaar overbodig) in de codebase.
+Mijn taak was dus om deze link uit de database en API te halen en ervoor te zorgen dat alles nogsteeds werkte zoals vooraf.
+
+## Donderdag 30 Maart
+
+Donderdag is hoogstwaarschijnlijk een minder exciting update. Vandaag heb ik doorgewerkt aan IncludeAllProfessionals uit de database te halen en een aantal meetings gehad.
+De wekelijkse refinement meeting (waar we ticketjes verder uitwerken en dus het werk van komende week voorbereiden) en mijn 2-wekelijkse 1-on-1 met Pieter (mijn stagebegeleider) vond ook plaats in de voormiddag.
+
+## Vrijdag 31 Maart
+
+Vrijdag werkte ik nog de laatste details af van IncludeAllProfessionals, nadat ik hiermee klaar was rond de middag heb ik nog 2 nieuwe (kleinere ticketjes opgenomen) en ben ik hieraan begonnen.
+Eenerszijds het doorlinken van /employee/slug (wat nu op email of code gelinkt wordt) en anderszijds het verwijderen van de adress-step uit de matching (aangezien we al een aantal maanden geen adressen meer bijhielden van cliënten).

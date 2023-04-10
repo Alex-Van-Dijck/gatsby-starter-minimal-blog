@@ -1,0 +1,37 @@
+---
+title: "Maandag 10/04"
+date: 2023-04-10
+slug: "/1004"
+tags:
+  - weekupdate
+---
+
+# Week 9
+
+## Maandag 3 April
+
+Vorige week was ik ook al rustig aan begonnen met uitzoeken hoe ik de update naar AWS-SDK v3 zou gaan doorvoeren (wat impact zou hebben op onze video calls die via amazon chime verlopen).
+Maandag heb ik hier verder aan gewerkt.
+
+## Dinsdag 4 April
+
+Dinsdag heb ik ook weer verder gewerkt aan de aws update, alsook een test geschreven voor de functie die gebruikt wordt om organisaties te zoeken a.d.h.v. email of code (omdat de /employee/slug routes eruit gehaald moesten worden (zie vorige week))?.
+De test was nog wel interessant om te schrijven aangezien ik nog niet veel tests geschreven had en zo bv. ook leerde dat tests ook deels als documentatie gebruitk worden.
+
+## Woensdag 5 April
+
+Vroeger werd er per organisatie ook een taal bijgehouden, die de standaardtaal zou zijn voor alle werknemers. Aangezien deze feature amper gebruikt werd moest deze eruit gehaald worden. Woensdag heb ik me bezig gehouden met alle traces van dit field er alvast langst de front-end uit te halen.
+Alle deletions gebeuren trouwens front-end -> back-end -> database zodat er geen code afhankelijk zou kunnen zijn van stuff die er niet is.
+Woensdag deed ik ook een test rond de videocalls samen met Vincent om te zien of mijn AWS update juist was uitgevoerd op de demo-omgeving.
+Alles verliep hier goed met uitzondering van een bug die voorkwam wanneer we van mic veranderden naar een BT device.
+
+## Donderdag 6 April
+
+Donderdag wist Louis ons tijdens de wekelijkse refinement meeting te zeggen dat hij deze bug was tegengekomen op de main-omgeving (die de aws update nog niet had) dus gelukkig was dit geen bug die ik als deel van de AWS update veroorzaakt had.
+Ook ben ik begonnen aan een nieuw ticket waarvan het probleem is dat de taal niet goed aanpast op de employee landingpage. Al snel had ik door dat het probleem lag bij het feit dat de taal enkel in Nexus (vertalingslibrary) werd aangepast en dus niet in de API waardoor het bij refreshen niet overschreven werd.
+
+## Vrijdag 7 April
+
+Vrijdag werd ik bij aankomst gevraagd of ik graag de meeting van de GGT circle wou bijwonen die zou gaan over hoe we GGT in de toekomst willen zien evolueren.
+Deze meeting was de hele voormiddag dus veel dev-werk heb ik niet kunnen doen. In de namiddag hadden we company review, waar elk departement komt voorstellen wat ze afgelopen maand gedaan hebben.
+Hiervoor moesten we dus ook nog even meeten i.v.m. wat we zouden voorstellen, daarna heb ik de rest van de namiddag gespendeerd aan de presentatie zo interactief mogelijk te maken aangezien dat leuk zou zijn en de review-meeting zelf uiteraard :).
