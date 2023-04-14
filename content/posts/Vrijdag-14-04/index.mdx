@@ -1,0 +1,34 @@
+---
+title: "Vrijdag 14/04"
+date: 2023-04-14
+slug: "/1404"
+tags:
+  - weekupdate
+---
+
+# Week 10
+
+## Dinsdag 11/04
+
+Dinsdag heb ik heel veel final changes gedaan aan mijn PR's rond de UI languages en deze ook allemaal gemerged. Verder heb ik nog een paar kleine changes gedaan aan de bug die inhield dat de languages niet veranderde.
+Hiervan was alle code wel degelijk goed, alleen had Louis een aantal aanpassingen voorgesteld om bv. een functie buiten een component te laten leven en een paar renames te doen.
+Ten slotte heb ik nog wat verder in de AWS docs gelezen over hoe ik mijn komende AWS changes ging aanpakken.
+
+## Woensdag 12/04
+
+Woensdag begon een beetje hectisch, aangezien Clovis net had doorgekregen dat er een incident zou zijn in de app terwijl hij de enige was die op locatie aanwezig was in de ochtend.
+Ik was net in de lift omhoog toen ik dit las, dus bij aankomst heb ik direct met hem samengezeten om te zoeken waar het aan lag. Even later kwam Louis ook aan en konden we al snel vinden aan welke PR het zou liggen en deze dan ook reverten.
+Later op de dag hadden we dan uiteraard nog een Post-Mortem om te kijken waardoor de bug er was ingekomen en hoe we dit dan ook kunnen voorkomen.
+Verder heb ik de dag gevuld met experimentele changes te maken aan de manier hoe we Chime geïntegreerd hebben.
+
+## Donderdag 13/04
+
+Donderdag heb ik tijdens de voormiddag verder gewerkt aan het optimaliseren van Chime, voornamelijk de video layout.
+Aangezien het idee was dat ik zoveel mogelijk overbodige code zou versimpelen. Hiervoor was de ingebouwde video layout van chime gebruiken i.p.v. de oude, minder mooie custom layout die we gemaakt hadden alvast een verschil van ~200 lijnen code die de app alleen maar gecompliceerder maakten.
+Tijdens de middag was er een lunchtalk voorzien om de resultaten te bespreken van een enquête rond de transitie van de organisatie naar self-management en hoe we dit in de toekomst graag zouden zien evolueren.
+Tijdens de namiddag heb ik deelgenomen aan de meeting van de GGT cirkel rond waar we het product in de komende jaren naartoe willen brengen.
+
+## Vrijdag 14/04
+
+Vrijdag heb ik van thuis uit gewerkt, weer verder kleine optimalisaties gedaan aan de Chime code.
+Zo heb ik na veel heen en weer getest een aantal UseEffects kunnen weghalen die uiteindelijk maar in vrij specifieke gevallen moesten worden aangeroepen en dus totaal niet in een UseEffect moesten staan omdat ze niet async lopen met de app.
